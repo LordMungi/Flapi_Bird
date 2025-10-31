@@ -1,4 +1,5 @@
 #include "bird.h"
+
 #include "config.h"
 #include "render.h"
 

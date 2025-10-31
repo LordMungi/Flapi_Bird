@@ -10,6 +10,6 @@ namespace obstacle
 
 	Obstacle init();
 
-	void move();
-	void draw();
+	void move(Obstacle& obstacle);
+	void draw(Obstacle obstacle);
 }

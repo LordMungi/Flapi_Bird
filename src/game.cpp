@@ -32,11 +32,8 @@ namespace game
 
 	static void updateBird()
 	{
-		bird.direction = 0;
-		if (IsKeyDown(KEY_W) || IsKeyDown(KEY_UP))
-			bird.direction = -1;
-		if (IsKeyDown(KEY_S) || IsKeyDown(KEY_DOWN))
-			bird.direction = 1;
+		if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP))
+			bird::jump(bird);
 
 		if (coll::rectRect(bird.collision, obstacle.collision))
 			init();

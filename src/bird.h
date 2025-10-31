@@ -6,12 +6,14 @@ namespace bird
 	struct Bird
 	{
 		shape::Rectangle collision;
-		int direction;
+		float direction;
 		int speed;
 	};
 
 	Bird init();
 
 	void move(Bird& bird);
+	void jump(Bird& bird);
+
 	void draw(Bird bird);
 }

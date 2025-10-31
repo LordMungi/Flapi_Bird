@@ -1,5 +1,7 @@
 #include "render.h"
+
 #include <iostream>
+
 #include "config.h"
 #include "math.h"
 
@@ -14,7 +16,7 @@ namespace render
 
 	void startWindow()
 	{
-		InitWindow(static_cast<int>(config::res.x), static_cast<int>(config::res.y), "Asteroids");
+		InitWindow(static_cast<int>(config::res.x), static_cast<int>(config::res.y), "Flappy Bird");
 		SetExitKey(KEY_NULL);
 		setGamespaceFromRes();
 	}
@@ -40,6 +42,7 @@ namespace render
 	{
 		Vector2 resPos = math::getResPointFromGamespace(rectangle.position);
 		Vector2 resSize = math::getResPointFromGamespace(rectangle.size);
+		//std::cout << resSize.x << " " << resSize.y << "\n";
 
 		DrawRectangle(static_cast<int>(resPos.x - resSize.x / 2), static_cast<int>(resPos.y - resSize.y / 2), static_cast<int>(resSize.x), static_cast<int>(resSize.y), color);
 	}

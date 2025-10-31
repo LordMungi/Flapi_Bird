@@ -11,13 +11,20 @@ namespace obstacle
 	{
 		Obstacle obstacle;
 
-		obstacle.collision.position = { config::gamespace.x / 2, config::gamespace.y - 25 };
+		obstacle.collision.position = { config::gamespace.x + 5, config::gamespace.y - 25 };
 		obstacle.collision.size = { 10, 50 };
+
+		return obstacle;
 	}
 
 	void move(Obstacle& obstacle)
 	{
 		obstacle.collision.position.x -= speed * GetFrameTime();
+	}
+
+	void resetPosition(Obstacle& obstacle)
+	{
+		obstacle.collision.position.x = config::gamespace.x + 5;
 	}
 
 	void draw(Obstacle obstacle)

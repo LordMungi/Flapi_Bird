@@ -7,10 +7,11 @@ namespace bird
 	{
 		shape::Rectangle collision;
 		int direction;
+		int speed;
 	};
 
 	Bird init();
 
-	void move();
-	void draw();
+	void move(Bird& bird);
+	void draw(Bird bird);
 }

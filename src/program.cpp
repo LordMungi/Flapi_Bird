@@ -1,8 +1,7 @@
 #include "program.h"
 
-#include <raylib.h>
-
 #include "render.h"
+#include "game.h"
 
 namespace program
 {
@@ -20,21 +19,24 @@ namespace program
 			update();
 			draw();
 		}
+
+		close();
 	}
 
 	static void init()
 	{
 		render::startWindow();
+		game::init();
 	}
 
 	static void update()
 	{
-
+		game::update();
 	}
 
 	static void draw()
 	{
-
+		game::draw();
 	}
 
 	static void close()

@@ -9,8 +9,9 @@ namespace bird
 	{
 		Bird bird;
 		
-		bird.collision.position = { config::gamespace.x / 2, config::gamespace.y / 2 };
+		bird.collision.position = { 20, config::gamespace.y / 2 };
 		bird.collision.size = { 8, 8 };
+		bird.direction = 0;
 		bird.speed = 100;
 
 		return bird;

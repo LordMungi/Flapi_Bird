@@ -1,22 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Program">
+      <UniqueIdentifier>{a9bad781-8da0-4a6f-bf95-88973336cfd4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Program\Game">
+      <UniqueIdentifier>{30500183-52ad-4d75-92e1-1fc790d2c838}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Program\Config">
+      <UniqueIdentifier>{9c14c382-144c-4a1e-b463-80d0488f6296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Render">
+      <UniqueIdentifier>{574e32cc-52e7-40e1-b5f8-3a6ad6c3f671}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Utilities">
+      <UniqueIdentifier>{8a020e17-a80f-4c5b-9804-2dfc4eb43ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Constants">
+      <UniqueIdentifier>{f7779555-a533-4c69-ad58-d7e79bfaab11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Utilities\Math">
+      <UniqueIdentifier>{9c927cc3-4934-4e91-93c0-3da75f402b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Game\Bird">
+      <UniqueIdentifier>{0c8f0e36-9f29-421e-b406-71611407cac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Game\Obstacle">
+      <UniqueIdentifier>{183dfa3c-54e8-4413-9ba6-0826835532b4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Program</Filter>
     </ClCompile>
+    <ClCompile Include="src\program.cpp">
+      <Filter>Program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render.cpp">
+      <Filter>Program\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config.cpp">
+      <Filter>Program\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math.cpp">
+      <Filter>Program\Utilities\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\game.cpp">
+      <Filter>Program\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bird.cpp">
+      <Filter>Program\Game\Bird</Filter>
+    </ClCompile>
+    <ClCompile Include="src\obstacle.cpp">
+      <Filter>Program\Game\Obstacle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\program.h">
+      <Filter>Program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>Program\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shapes.h">
+      <Filter>Program\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\render.h">
+      <Filter>Program\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math.h">
+      <Filter>Program\Utilities\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game.h">
+      <Filter>Program\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bird.h">
+      <Filter>Program\Game\Bird</Filter>
+    </ClInclude>
+    <ClInclude Include="src\obstacle.h">
+      <Filter>Program\Game\Obstacle</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

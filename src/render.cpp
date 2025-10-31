@@ -17,7 +17,6 @@ namespace render
 	void startWindow()
 	{
 		InitWindow(static_cast<int>(config::res.x), static_cast<int>(config::res.y), "Flappy Bird");
-		SetExitKey(KEY_NULL);
 		setGamespaceFromRes();
 	}
 

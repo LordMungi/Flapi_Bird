@@ -2,6 +2,7 @@
 
 #include "bird.h"
 #include "obstacle.h"
+#include "collision.h"
 
 namespace game
 {
@@ -41,6 +42,9 @@ namespace game
 			bird.direction = -1;
 		if (IsKeyDown(KEY_S) || IsKeyDown(KEY_DOWN))
 			bird.direction = 1;
+
+		if (coll::rectRect(bird.collision, obstacle.collision))
+			init();
 
 		bird::move(bird);
 	}

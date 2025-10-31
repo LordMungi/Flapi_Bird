@@ -28,6 +28,9 @@
     <Filter Include="Program\Game\Obstacle">
       <UniqueIdentifier>{183dfa3c-54e8-4413-9ba6-0826835532b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Program\Utilities\Collision">
+      <UniqueIdentifier>{7e331198-20e0-4c8f-8d56-4ad4b6486736}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -54,6 +57,9 @@
     <ClCompile Include="src\obstacle.cpp">
       <Filter>Program\Game\Obstacle</Filter>
     </ClCompile>
+    <ClCompile Include="src\collision.cpp">
+      <Filter>Program\Utilities\Collision</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\program.h">
@@ -79,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="src\obstacle.h">
       <Filter>Program\Game\Obstacle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collision.h">
+      <Filter>Program\Utilities\Collision</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

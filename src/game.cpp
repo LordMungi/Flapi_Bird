@@ -26,13 +26,8 @@ namespace game
 
 	void draw()
 	{
-		BeginDrawing();
-		ClearBackground(BLACK);
-
 		bird::draw(bird);
 		obstacle::draw(obstacle);
-
-		EndDrawing();
 	}
 
 	static void updateBird()

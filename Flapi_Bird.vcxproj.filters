@@ -34,6 +34,12 @@
     <Filter Include="Program\Utilities\Random">
       <UniqueIdentifier>{1302ff6e-c253-4901-87c2-cf9cf2ef9758}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Program\Elements">
+      <UniqueIdentifier>{1e576e8a-2188-4569-ac7d-401b3f215c05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Elements\Label">
+      <UniqueIdentifier>{3bce7c66-d442-4736-a61a-f2352eff463b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -66,6 +72,9 @@
     <ClCompile Include="src\random.cpp">
       <Filter>Program\Utilities\Random</Filter>
     </ClCompile>
+    <ClCompile Include="src\label.cpp">
+      <Filter>Program\Elements\Label</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\program.h">
@@ -97,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="src\random.h">
       <Filter>Program\Utilities\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="src\label.h">
+      <Filter>Program\Elements\Label</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@
 
 #include "render.h"
 #include "game.h"
+#include "label.h"
 
 namespace program
 {
@@ -12,6 +13,8 @@ namespace program
 	static void update();
 	static void draw();
 	static void close();
+
+	label::Label versionLabel;
 	
 	void run()
 	{
@@ -31,6 +34,7 @@ namespace program
 		srand(static_cast<int>(time(0)));
 		render::startWindow();
 		game::init();
+		versionLabel = label::init("version 0.1", { {5, 95},{5, 5} }, render::TextAlign::Left, WHITE);
 	}
 
 	static void update()
@@ -40,7 +44,13 @@ namespace program
 
 	static void draw()
 	{
+		BeginDrawing();
+		ClearBackground(BLACK);
+
 		game::draw();
+		label::draw(versionLabel);
+
+		EndDrawing();
 	}
 
 	static void close()

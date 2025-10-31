@@ -33,6 +33,12 @@ namespace bird
 		bird.direction = -jumpStrength;
 	}
 
+	void bumpRoof(Bird& bird)
+	{
+		bird.collision.position.y = bird.collision.size.y / 2;
+		bird.direction = 0;
+	}
+
 	void draw(Bird bird)
 	{
 		render::rectangle(bird.collision, WHITE);

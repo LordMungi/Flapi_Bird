@@ -9,4 +9,14 @@ namespace coll
 			rect1.position.y + rect1.size.y / 2 > rect2.position.y - rect2.size.y / 2 &&
 			rect1.position.y - rect1.size.y / 2 < rect2.position.y + rect2.size.y / 2;
 	}
+
+	bool rectRoof(shape::Rectangle rect, float roof)
+	{
+		return rect.position.y - rect.size.y / 2 < roof;
+	}
+
+	bool rectFloor(shape::Rectangle rect, float floor)
+	{
+		return rect.position.y + rect.size.y / 2 > floor;
+	}
 }

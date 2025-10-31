@@ -10,7 +10,6 @@ namespace render
 	int currentFrame;
 	bool updatedThisFrame;
 
-
 	static void setGamespaceFromRes();
 
 	void startWindow()

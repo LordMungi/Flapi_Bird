@@ -167,6 +167,7 @@
     <ClCompile Include="src\math.cpp" />
     <ClCompile Include="src\obstacle.cpp" />
     <ClCompile Include="src\program.cpp" />
+    <ClCompile Include="src\random.cpp" />
     <ClCompile Include="src\render.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +178,7 @@
     <ClInclude Include="src\math.h" />
     <ClInclude Include="src\obstacle.h" />
     <ClInclude Include="src\program.h" />
+    <ClInclude Include="src\random.h" />
     <ClInclude Include="src\render.h" />
     <ClInclude Include="src\shapes.h" />
   </ItemGroup>

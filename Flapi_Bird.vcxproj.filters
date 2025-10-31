@@ -31,6 +31,9 @@
     <Filter Include="Program\Utilities\Collision">
       <UniqueIdentifier>{7e331198-20e0-4c8f-8d56-4ad4b6486736}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Program\Utilities\Random">
+      <UniqueIdentifier>{1302ff6e-c253-4901-87c2-cf9cf2ef9758}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -60,6 +63,9 @@
     <ClCompile Include="src\collision.cpp">
       <Filter>Program\Utilities\Collision</Filter>
     </ClCompile>
+    <ClCompile Include="src\random.cpp">
+      <Filter>Program\Utilities\Random</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\program.h">
@@ -88,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="src\collision.h">
       <Filter>Program\Utilities\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="src\random.h">
+      <Filter>Program\Utilities\Random</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

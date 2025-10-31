@@ -1,5 +1,8 @@
 #include "program.h"
 
+#include <iostream>
+#include <ctime>
+
 #include "render.h"
 #include "game.h"
 
@@ -25,6 +28,7 @@ namespace program
 
 	static void init()
 	{
+		srand(static_cast<int>(time(0)));
 		render::startWindow();
 		game::init();
 	}

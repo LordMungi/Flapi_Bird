@@ -52,7 +52,7 @@ namespace game
 	static void updateObstacle()
 	{
 		obstacle::move(obstacle);
-		if (obstacle.collision.position.x - obstacle.collision.size.x / 2 < 0)
+		if (obstacle.collision.position.x + obstacle.collision.size.x / 2 < 0)
 			obstacle::resetPosition(obstacle);
 	}
 }

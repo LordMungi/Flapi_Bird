@@ -44,7 +44,7 @@ namespace credits
 
 	screen::Type update()
 	{
-		if (button::update(exit))
+		if (button::update(exit) || IsKeyPressed(KEY_ESCAPE))
 			nextScreen = screen::Type::Menu;
 
 		return nextScreen;

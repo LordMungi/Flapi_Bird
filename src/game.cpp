@@ -42,6 +42,9 @@ namespace game
 		if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP) || IsKeyPressed(KEY_SPACE))
 			bird::jump(bird);
 
+		if (IsKeyPressed(KEY_ESCAPE))
+			nextScreen = screen::Type::Menu;
+
 		if (coll::rectRect(bird.collision, obstacle.topCollision) || coll::rectRect(bird.collision, obstacle.bottomCollision))
 			init();
 

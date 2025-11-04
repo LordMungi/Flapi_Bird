@@ -35,6 +35,7 @@ namespace program
 	{
 		srand(static_cast<int>(time(0)));
 		render::startWindow();
+		SetExitKey(KEY_NULL);
 
 		currentScreen = screen::Type::Menu;
 	}

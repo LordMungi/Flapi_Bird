@@ -6,6 +6,7 @@
 #include "render.h"
 #include "game.h"
 #include "menu.h"
+#include "credits.h"
 
 namespace program
 {
@@ -51,6 +52,7 @@ namespace program
 			currentScreen = game::update();
 			break;
 		case screen::Type::Credits:
+			currentScreen = credits::update();
 			break;
 		case screen::Type::Null:
 			close();
@@ -73,6 +75,7 @@ namespace program
 			game::init();
 			break;
 		case screen::Type::Credits:
+			credits::init();
 			break;
 		}
 
@@ -93,6 +96,7 @@ namespace program
 			game::draw();
 			break;
 		case screen::Type::Credits:
+			credits::draw();
 			break;
 		}
 

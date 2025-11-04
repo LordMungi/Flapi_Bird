@@ -39,7 +39,7 @@ namespace game
 
 	static void updateBird()
 	{
-		if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP) || IsKeyPressed(KEY_SPACE))
+		if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP) || IsKeyPressed(KEY_SPACE) || IsMouseButtonPressed(MOUSE_BUTTON_LEFT))
 			bird::jump(bird);
 
 		if (IsKeyPressed(KEY_ESCAPE))

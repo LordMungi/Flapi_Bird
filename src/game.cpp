@@ -36,7 +36,7 @@ namespace game
 		if (IsKeyPressed(KEY_W) || IsKeyPressed(KEY_UP) || IsKeyPressed(KEY_SPACE))
 			bird::jump(bird);
 
-		if (coll::rectRect(bird.collision, obstacle.collision))
+		if (coll::rectRect(bird.collision, obstacle.topCollision) || coll::rectRect(bird.collision, obstacle.bottomCollision))
 			init();
 
 		if (coll::rectRoof(bird.collision, 0))
@@ -51,7 +51,7 @@ namespace game
 	static void updateObstacle()
 	{
 		obstacle::move(obstacle);
-		if (obstacle.collision.position.x + obstacle.collision.size.x / 2 < 0)
+		if (obstacle.topCollision.position.x + obstacle.topCollision.size.x / 2 < 0)
 			obstacle::resetPosition(obstacle);
 	}
 }

@@ -5,7 +5,9 @@ namespace obstacle
 {
 	struct Obstacle
 	{
-		shape::Rectangle collision;
+		Vector2 position;
+		shape::Rectangle topCollision;
+		shape::Rectangle bottomCollision;
 	};
 
 	Obstacle init();

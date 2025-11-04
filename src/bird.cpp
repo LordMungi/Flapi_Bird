@@ -8,7 +8,7 @@ namespace bird
 	static void fall(Bird& bird);
 
 	const float jumpStrength = 1.0f;
-	const float gravity = 2.0f;
+	const float gravity = 3.0f;
 
 	Bird init()
 	{

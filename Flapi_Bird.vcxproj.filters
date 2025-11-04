@@ -4,9 +4,6 @@
     <Filter Include="Program">
       <UniqueIdentifier>{a9bad781-8da0-4a6f-bf95-88973336cfd4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Program\Game">
-      <UniqueIdentifier>{30500183-52ad-4d75-92e1-1fc790d2c838}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Program\Config">
       <UniqueIdentifier>{9c14c382-144c-4a1e-b463-80d0488f6296}</UniqueIdentifier>
     </Filter>
@@ -22,12 +19,6 @@
     <Filter Include="Program\Utilities\Math">
       <UniqueIdentifier>{9c927cc3-4934-4e91-93c0-3da75f402b04}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Program\Game\Bird">
-      <UniqueIdentifier>{0c8f0e36-9f29-421e-b406-71611407cac4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Program\Game\Obstacle">
-      <UniqueIdentifier>{183dfa3c-54e8-4413-9ba6-0826835532b4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Program\Utilities\Collision">
       <UniqueIdentifier>{7e331198-20e0-4c8f-8d56-4ad4b6486736}</UniqueIdentifier>
     </Filter>
@@ -39,6 +30,27 @@
     </Filter>
     <Filter Include="Program\Elements\Label">
       <UniqueIdentifier>{3bce7c66-d442-4736-a61a-f2352eff463b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Elements\Button">
+      <UniqueIdentifier>{9f758042-4879-4f21-a6c3-6737369163a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Screens">
+      <UniqueIdentifier>{d2d07157-ed4e-487b-91c1-6145b703903d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Screens\Game">
+      <UniqueIdentifier>{30500183-52ad-4d75-92e1-1fc790d2c838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Screens\Game\Bird">
+      <UniqueIdentifier>{0c8f0e36-9f29-421e-b406-71611407cac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Screens\Game\Obstacle">
+      <UniqueIdentifier>{183dfa3c-54e8-4413-9ba6-0826835532b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Screens\Menu">
+      <UniqueIdentifier>{fa52335d-a209-4252-9528-7321edc15b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Program\Utilities\Constants">
+      <UniqueIdentifier>{949e19a2-f213-41be-ac7b-839060b05516}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -58,13 +70,13 @@
       <Filter>Program\Utilities\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\game.cpp">
-      <Filter>Program\Game</Filter>
+      <Filter>Program\Screens\Game</Filter>
     </ClCompile>
     <ClCompile Include="src\bird.cpp">
-      <Filter>Program\Game\Bird</Filter>
+      <Filter>Program\Screens\Game\Bird</Filter>
     </ClCompile>
     <ClCompile Include="src\obstacle.cpp">
-      <Filter>Program\Game\Obstacle</Filter>
+      <Filter>Program\Screens\Game\Obstacle</Filter>
     </ClCompile>
     <ClCompile Include="src\collision.cpp">
       <Filter>Program\Utilities\Collision</Filter>
@@ -74,6 +86,12 @@
     </ClCompile>
     <ClCompile Include="src\label.cpp">
       <Filter>Program\Elements\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button.cpp">
+      <Filter>Program\Elements\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\menu.cpp">
+      <Filter>Program\Screens\Menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,13 +111,13 @@
       <Filter>Program\Utilities\Math</Filter>
     </ClInclude>
     <ClInclude Include="src\game.h">
-      <Filter>Program\Game</Filter>
+      <Filter>Program\Screens\Game</Filter>
     </ClInclude>
     <ClInclude Include="src\bird.h">
-      <Filter>Program\Game\Bird</Filter>
+      <Filter>Program\Screens\Game\Bird</Filter>
     </ClInclude>
     <ClInclude Include="src\obstacle.h">
-      <Filter>Program\Game\Obstacle</Filter>
+      <Filter>Program\Screens\Game\Obstacle</Filter>
     </ClInclude>
     <ClInclude Include="src\collision.h">
       <Filter>Program\Utilities\Collision</Filter>
@@ -109,6 +127,15 @@
     </ClInclude>
     <ClInclude Include="src\label.h">
       <Filter>Program\Elements\Label</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button.h">
+      <Filter>Program\Elements\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\screens.h">
+      <Filter>Program\Utilities\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="src\menu.h">
+      <Filter>Program\Screens\Menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -5,17 +5,19 @@
 
 #include "render.h"
 #include "game.h"
-#include "label.h"
+#include "menu.h"
 
 namespace program
 {
 	static void init();
 	static void update();
+	static void changeScreen();
 	static void draw();
 	static void close();
 
-	label::Label versionLabel;
-	
+	screen::Type currentScreen = screen::Type::Null;
+	screen::Type previousScreen = screen::Type::Null;
+		
 	void run()
 	{
 		init();
@@ -33,13 +35,47 @@ namespace program
 	{
 		srand(static_cast<int>(time(0)));
 		render::startWindow();
-		game::init();
-		versionLabel = label::init("version 0.1", { {5, 95},{5, 5} }, render::TextAlign::Left, WHITE);
+
+		currentScreen = screen::Type::Menu;
 	}
 
 	static void update()
 	{
-		game::update();
+		switch (currentScreen)
+		{
+		case screen::Type::Menu:
+			currentScreen = menu::update();
+			break;
+		case screen::Type::Game:
+			currentScreen = game::update();
+			break;
+		case screen::Type::Credits:
+			break;
+		case screen::Type::Null:
+			close();
+			break;
+		}
+
+		if (currentScreen != previousScreen)
+			changeScreen();
+	}
+
+
+	static void changeScreen()
+	{
+		switch (currentScreen)
+		{
+		case screen::Type::Menu:
+			menu::init();
+			break;
+		case screen::Type::Game:
+			game::init();
+			break;
+		case screen::Type::Credits:
+			break;
+		}
+
+		previousScreen = currentScreen;
 	}
 
 	static void draw()
@@ -47,8 +83,18 @@ namespace program
 		BeginDrawing();
 		ClearBackground(BLACK);
 
-		game::draw();
-		label::draw(versionLabel);
+		switch (currentScreen)
+		{
+		case screen::Type::Menu:
+			menu::draw();
+			break;
+		case screen::Type::Game:
+			game::draw();
+			break;
+		case screen::Type::Credits:
+			break;
+		}
+
 
 		EndDrawing();
 	}
@@ -57,4 +103,5 @@ namespace program
 	{
 		render::closeWindow();
 	}
+
 }

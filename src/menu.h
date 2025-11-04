@@ -1,7 +1,7 @@
 #pragma once
 #include "screens.h"
 
-namespace game
+namespace menu
 {
 	void init();
 	screen::Type update();

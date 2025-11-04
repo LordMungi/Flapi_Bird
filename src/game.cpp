@@ -7,6 +7,8 @@
 
 namespace game
 {
+	screen::Type nextScreen;
+
 	bird::Bird bird;
 	obstacle::Obstacle obstacle;
 
@@ -15,14 +17,18 @@ namespace game
 
 	void init()
 	{
+		nextScreen = screen::Type::Game;
+
 		bird = bird::init();
 		obstacle = obstacle::init();
 	}
 
-	void update()
+	screen::Type update()
 	{
 		updateBird();
 		updateObstacle();
+
+		return nextScreen;
 	}
 
 	void draw()

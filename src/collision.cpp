@@ -19,4 +19,12 @@ namespace coll
 	{
 		return rect.position.y + rect.size.y / 2 > floor;
 	}
+
+	bool pointRectangle(Vector2 point, shape::Rectangle rectangle)
+	{
+		return (point.x < rectangle.position.x + rectangle.size.x / 2 &&
+			point.x > rectangle.position.x - rectangle.size.x / 2 &&
+			point.y < rectangle.position.y + rectangle.size.y / 2 &&
+			point.y > rectangle.position.y - rectangle.size.y / 2);
+	}
 }

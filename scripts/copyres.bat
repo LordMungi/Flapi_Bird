@@ -1,0 +1,1 @@
+xcopy resource\ %1\resource\

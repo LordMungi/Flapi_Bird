@@ -23,7 +23,7 @@ namespace program
 	{
 		init();
 
-		while (!WindowShouldClose())
+		while (!WindowShouldClose() && currentScreen != screen::Type::Null)
 		{
 			update();
 			draw();
@@ -53,9 +53,6 @@ namespace program
 			break;
 		case screen::Type::Credits:
 			currentScreen = credits::update();
-			break;
-		case screen::Type::Null:
-			close();
 			break;
 		}
 

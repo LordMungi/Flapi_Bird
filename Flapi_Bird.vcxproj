@@ -161,6 +161,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\background.cpp" />
     <ClCompile Include="src\bird.cpp" />
     <ClCompile Include="src\button.cpp" />
     <ClCompile Include="src\collision.cpp" />
@@ -177,6 +178,7 @@
     <ClCompile Include="src\render.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\background.h" />
     <ClInclude Include="src\bird.h" />
     <ClInclude Include="src\button.h" />
     <ClInclude Include="src\collision.h" />

@@ -55,6 +55,9 @@
     <Filter Include="Program\Screens\Credits">
       <UniqueIdentifier>{406d0f20-b414-4459-aaab-583392b776aa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Program\Screens\Game\Background">
+      <UniqueIdentifier>{3aa957e2-aae4-4cf4-9e05-07a393c76f55}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -98,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="src\credits.cpp">
       <Filter>Program\Screens\Credits</Filter>
+    </ClCompile>
+    <ClCompile Include="src\background.cpp">
+      <Filter>Program\Screens\Game\Background</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="src\credits.h">
       <Filter>Program\Screens\Credits</Filter>
+    </ClInclude>
+    <ClInclude Include="src\background.h">
+      <Filter>Program\Screens\Game\Background</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

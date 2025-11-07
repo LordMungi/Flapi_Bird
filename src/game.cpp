@@ -2,6 +2,7 @@
 
 #include "bird.h"
 #include "obstacle.h"
+#include "background.h"
 #include "collision.h"
 #include "config.h"
 
@@ -21,18 +22,22 @@ namespace game
 
 		bird = bird::init();
 		obstacle = obstacle::init();
+
+		background::init();
 	}
 
 	screen::Type update()
 	{
 		updateBird();
 		updateObstacle();
+		background::update();
 
 		return nextScreen;
 	}
 
 	void draw()
 	{
+		background::draw();
 		bird::draw(bird);
 		obstacle::draw(obstacle);
 	}

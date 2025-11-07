@@ -38,7 +38,7 @@ namespace menu
 
 		buttons[static_cast<int>(Options::Exit)] = button::init(shape, "Exit");
 
-		versionLabel = label::init("version 0.2", { {5, 95},{5, 5} }, render::TextAlign::Left, WHITE);
+		versionLabel = label::init("version 0.3", { {5, 95},{5, 5} }, render::TextAlign::Left, WHITE);
 	}
 
 	screen::Type update()
